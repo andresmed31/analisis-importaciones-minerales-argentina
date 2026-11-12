@@ -46,7 +46,6 @@ Análisis exploratorio de más de 100.000 registros mensuales de importaciones m
 - Los rankings históricos suman todo el período y no representan necesariamente la estructura actual.
 - Cada fila es un registro de la base, no necesariamente una operación individual.
 - Diferencias entre origen y procedencia no prueban por sí solas intermediación ni rutas físicas.
-- Pendiente: completar las definiciones oficiales de los campos de la fuente (por ejemplo, `PPRO`).
 
 ## Cómo reproducirlo
 
@@ -55,23 +54,14 @@ pip install pandas numpy matplotlib jupyter
 jupyter notebook analisis_minerales_argentina.ipynb
 ```
 
-Colocá el CSV en la misma carpeta que el notebook, con el nombre que espera la celda de carga (`impominerales-siacam(3).csv`).
+Colocá el CSV en la misma carpeta que el notebook, con el nombre que espera la celda de carga (`impominerales-siacam.csv`).
 
 ## Datos
 
-- **Fuente:** SIACAM (según el nombre del archivo). `<COMPLETAR: enlace de descarga>`
-- **Fecha de consulta:** `<COMPLETAR>`
+- **Fuente:** SIACAM (según el nombre del archivo). `https://www.mecon.gob.ar/dataset/Comercio/impominerales-siacam.csv`
+- **Fecha de consulta:** `12 de noviembre de 2026`
 - **Cobertura:** enero de 1994 a junio de 2026; 101 grupos minerales, 152 países de origen, 5 sectores.
-
-## Próximos pasos
-
-- [ ] Deflactar los valores (USD constantes) para comparar décadas.
-- [ ] Plantear y contrastar una hipótesis sobre el salto de 2021 con precios internacionales del mineral de hierro.
-- [ ] Medir la concentración por origen a lo largo del tiempo.
-- [ ] Analizar estacionalidad con la columna `MES` y el desglose por `SECTOR`.
-- [ ] Replicar las consultas clave en SQL.
-- [ ] Armar un dashboard interactivo.
 
 ## Autor
 
-`<COMPLETAR: nombre>` · `<COMPLETAR: enlace a perfil / LinkedIn / Workana>`
+`Andrés Medina` · `https://www.linkedin.com/in/andresmed31/`
